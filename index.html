@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Card Maker</title>
+	<link href="style.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet">
+	<script src="script.js" defer>
+
+	</script>
+</head>
+
+<body>
+	<h1>Card Maker</h1>
+
+	<!-- box to represent the card -->
+	<!-- div stands for division and is used to make boxes -->
+	<div id="card">
+    <p id="image"></p>
+    <h3 id="text"></h3>
+    <div id="custom"></div>
+  </div>
+
+	<!-- box to hold the card editing controls -->
+	<div id="sidePanel">
+    <p>Text</p>
+    <select id = "event">
+      <option value="Happy Birthday!" id="happy-birthday">Birthday</option>
+      <option value="Happy Valentine's Day" id="valentine">Valentine's Day</option>
+      <option value="Get Well Soon!" id="sick">Sick/Empathy</option>
+      <option value="Happy Wedding Day!" id="wedding">Wedding Day</option>
+    </select>
+		<button id="birthdayButton">Pick Event</button>
+
+    <p>Customized Message</p>
+    <textarea id="message"></textarea><br>
+  <input type="submit" id="submit">
+    
+
+    <p>Background color</p>
+    <select id = "backgroundColors">
+      <option value="yellow" id="yellow">Yellow</option>
+      <option value="purple" id="purple">Purple</option>
+      <option value="red" id="red">Red</option>
+      <option value="blue" id="blue">Blue</option>
+      <option value="pink" id="pink">Pink</option>
+      <option value="orange" id="orange">Orange</option>
+      <option value="black" id="black">Black</option>
+      <option value="grey" id="grey">Grey</option>
+      <option value="white" id="white">White</option>
+    </select>
+    <button id="backgroundButton">Pick Background Color</button>
+
+    <p>Text color</p>
+    <select id = "textColors">
+      <option value="yellow" id="yellow">Yellow</option>
+      <option value="purple" id="purple">Purple</option>
+      <option value="red" id="red">Red</option>
+      <option value="blue" id="blue">Blue</option>
+      <option value="pink" id="pink">Pink</option>
+      <option value="orange" id="orange">Orange</option>
+      <option value="black" id="black">Black</option>
+      <option value="grey" id="grey">Grey</option>
+      <option value="white" id="white">White</option>
+    </select>
+    <button id="textButton">Pick Text Color</button>
+
+    <p>Font size</p>
+    <select id = "fontSize">
+      <option value="20px" id="20">20 px</option>
+      <option value="25px" id="25">25 px</option>
+      <option value="30px" id="30">30 px</option>
+    </select>
+    <button id="sizeButton">Pick Font Size</button>
+
+      <p>Font Style</p>
+    <button id="fontStyleButton">Pangolin Style</button>
+
+    <p>Balloon</p>
+    <button id="balloon">Balloons</button>
+
+  </div>
+</body>
+
+</html>
